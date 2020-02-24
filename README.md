@@ -1,6 +1,8 @@
 # Game-Engines-2-Assignment---C17391623
 The repository for the first Game Engines assignment of semester two
 
+Original Scene: https://www.youtube.com/watch?v=89WcIwjlQxA
+
 STORYBOARD:
 
 Shot 1: Camera pans to reveal ships, staying still in formation
