@@ -22,14 +22,12 @@ public class ShipPathfinding : MonoBehaviour
 
     private bool arrived = false;
     public float changingDistance = 4.0f;
-    private GameObject startPoint;
     [Range(0.0f, 0.2f)]
     public float banking = 0.1f;
 
     // Start is called before the first frame update
     void Start()
     {
-        startPoint = GameObject.Find("WayPoint1");
     }
 
     public void OnDrawGizmos()
@@ -80,10 +78,6 @@ public class ShipPathfinding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i<targetTransforms.Length; i++)
-        {
-            targetTransforms = startPoint.GetComponentsInChildren<Transform>();
-        }
         if (target != null)
         {
             target = targetTransforms[i].position;
