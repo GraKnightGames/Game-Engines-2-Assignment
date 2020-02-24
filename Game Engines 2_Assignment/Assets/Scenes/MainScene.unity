@@ -333,7 +333,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 270388259}
-  - component: {fileID: 270388258}
   - component: {fileID: 270388257}
   m_Layer: 0
   m_Name: Boid2
@@ -371,36 +370,6 @@ MonoBehaviour:
   - {fileID: 1553517744}
   changingDistance: 4
   banking: 0.2
---- !u!114 &270388258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270388256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09fec113bd80be94ebc2bba4da5e3583, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
-  force: {x: 0, y: 0, z: 0}
-  mass: 1
-  maxSpeed: 1.67
-  maxForce: 10
-  i: 0
-  speed: 0
-  dist: 0
-  target: {x: 0, y: 0, z: 0}
-  targetTransforms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  changingDistance: 4
-  banking: 0.1
 --- !u!4 &270388259
 Transform:
   m_ObjectHideFlags: 0
@@ -520,7 +489,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 703529661}
-  - component: {fileID: 703529663}
   - component: {fileID: 703529662}
   m_Layer: 0
   m_Name: Boid1
@@ -560,7 +528,7 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
+  maxSpeed: 5.5
   maxForce: 10
   i: 0
   speed: 0
@@ -573,36 +541,6 @@ MonoBehaviour:
   - {fileID: 120359780}
   changingDistance: 4
   banking: 0.2
---- !u!114 &703529663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703529660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09fec113bd80be94ebc2bba4da5e3583, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
-  force: {x: 0, y: 0, z: 0}
-  mass: 1
-  maxSpeed: 1.67
-  maxForce: 10
-  i: 0
-  speed: 0
-  dist: 0
-  target: {x: 0, y: 0, z: 0}
-  targetTransforms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  changingDistance: 4
-  banking: 0.1
 --- !u!1 &857083825
 GameObject:
   m_ObjectHideFlags: 0
