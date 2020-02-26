@@ -1,7 +1,5 @@
-# Game-Engines-2-Assignment---C17391623
+# Game-Engines-2-Assignment
 The repository for the first Game Engines assignment of semester two
-
-Student Number: C17391623
 
 Original Scene: https://www.youtube.com/watch?v=89WcIwjlQxA
 
