@@ -56,3 +56,6 @@ Sound Effects Used:
 - SeanSecret (2018), "Classic Laser Pew", Freesound.org <https://freesound.org/people/TheIrishninjas/downloaded_sounds/> [Accessed 22/02/20]
 - Stewdio2003 (2014), "CP_Sci-Fi Ship Pass 03.aif", Freesound.org <https://freesound.org/people/stewdio2003/sounds/238370/> [Accessed 22/02/2020]
 - xtrgamr (2014), "Whoosh.wav", Freesound.org <https://freesound.org/people/xtrgamr/sounds/257779/> [Accessed 22/02/20]
+
+Scene Recreated:
+- Star Trek: Deep Space Nine (1997), Paramount Domestic Television, 3 November
