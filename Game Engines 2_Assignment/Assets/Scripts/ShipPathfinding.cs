@@ -17,13 +17,12 @@ public class ShipPathfinding : MonoBehaviour
     public float speed = 0;
     public float dist;
 
-    public Vector3 target;
-    public Transform[] targetTransforms;
+    public Vector3 target; //The current waypoint position
+    public Transform[] targetTransforms; //The array of all waypoints
 
     private bool arrived = false;
-    public float changingDistance = 4.0f;
-    [Range(0.0f, 0.2f)]
-    public float banking = 0.1f;
+    public float changingDistance = 4.0f; //the distance from a waypoint at which the boid cycles to the next waypoint
+    public float banking = 0.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -35,17 +34,17 @@ public class ShipPathfinding : MonoBehaviour
         Gizmos.color = Color.green;
         for (int i = 0; i < targetTransforms.Length - 1; i++)
         {
-            Gizmos.DrawLine(targetTransforms[i].position, targetTransforms[i + 1].position);
+            Gizmos.DrawLine(targetTransforms[i].position, targetTransforms[i + 1].position); //Drawing lines between each waypoint
         }
         for (int i = 0; i < targetTransforms.Length; i++)
         {
-            Gizmos.DrawCube(targetTransforms[i].position, new Vector3(1, 1, 1));
+            Gizmos.DrawCube(targetTransforms[i].position, new Vector3(1, 1, 1)); //Drawing cubes at each waypoint to visualise them for easy editing
             Gizmos.DrawLine(targetTransforms[i].position, targetTransforms[0].position);
         }
     }
 
 
-    Vector3 Seek(Vector3 target)
+    Vector3 Seek(Vector3 target) //Gets the distance to the target and the speed the boid needs to be travelling at to reach the target
     {
         Vector3 toTarget = target - transform.position;
         Vector3 desired = toTarget.normalized * maxSpeed;
@@ -53,7 +52,7 @@ public class ShipPathfinding : MonoBehaviour
         return desired - velocity;
     }
 
-    public Vector3 CalculateForce()
+    public Vector3 CalculateForce() //Calculates the force needed to move the boid
     {
         Vector3 toTarget = target - transform.position;
         dist = toTarget.magnitude;
@@ -62,7 +61,7 @@ public class ShipPathfinding : MonoBehaviour
         return force;
     }
 
-    public void Switching()
+    public void Switching() //Detects if the boid is within the changing distance and has not arrived yet
     {
         Vector3 toTarget = target - transform.position;
         dist = toTarget.magnitude;
@@ -90,10 +89,10 @@ public class ShipPathfinding : MonoBehaviour
         if (speed > 0)
         {
             Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * banking), Time.deltaTime * 3.0f);
-            transform.LookAt(transform.position + velocity, tempUp);
+            transform.LookAt(transform.position + velocity, tempUp); //Applies banking
         }
         Switching();
-        if (arrived)
+        if (arrived) //moves on to the next waypoint and sets the arrived bool to false
         {
             i += 1;
             arrived = false;
@@ -104,7 +103,7 @@ public class ShipPathfinding : MonoBehaviour
         }
         if (i > (targetTransforms.Length - 1))
         {
-            i = 0;
+            i = 0; //Resets the array index so that it does not go out of bounds
         }
     }
 }
