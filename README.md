@@ -44,6 +44,7 @@ Shot 17: The medium-sized ship flies over and then past the big ship as it explo
 
 Models and Materials Used:
 - Gabriel Martino (2015), "Aerial Explosion Tutorial Materials.unitypackage", Dropbox <https://www.dropbox.com/s/70r7gr1tfytv9o9/Aerial%20Explosion%20Tutorial%20Materials.unitypackage?dl=0> [Accessed 25/02/20]
+- Hangar.b.productions (2019), "Federation Attack Fighter", Sketchfab <https://sketchfab.com/3d-models/federation-attack-fighter-e8a4ee7b6a7d43218bfad55b64030ff0> [Accessed 01/03/20]
 - Hoogflood (2020), “Filono Mark I - Unarmed [SILTONES]”, Sketchfab <https://sketchfab.com/3d-models/filono-mark-i-unarmed-siltones ca1ebae5dd484f8ebcb19277d425f092> [Accessed 17/02/20]
 - Major Stress (2020), “U.S.S. Enterprise NCC-1701-A” – Sketchfab <https://sketchfab.com/3d-models/uss-enterprise-ncc-1701-a-c613e27541ca4b1d94c6a4e1c5d825c8> [Accessed 17/02/20]
 - Morenostefanuto (2019), “Equinox NCC 72381”, Sketchfab <https://sketchfab.com/3d-models/equinox-ncc-72381-6cc45f749b484611902a8308af7faf16> [Accessed 17/02/20]
