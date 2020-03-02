@@ -51,6 +51,7 @@ Models and Materials Used:
 - PULSAR BYTES (2017), "SpaceSkies Free", Unity Asset Store <https://assetstore.unity.com/packages/2d/textures-materials/sky/spaceskies-free-80503> [Accessed 20/02/20]
 - Ribot02 (2020), “Star Freighter”, Sketchfab https://sketchfab.com/3d-models/star-freighter-12b43cbfb23f462c985d6f9f5bf8d3fe [Accessed 17/02/20] 
 - Wholock (2019), “Star Trek – Dkyr Class”, Sketchfab <https://sketchfab.com/3d-models/star-trek-dkyr-class-81a01b719ec4437ea47342aa7c944cca> [Accessed 17/02/20]
+- Wholock (2019), "Star Trek - Danube Class", Sketchfab <https://sketchfab.com/3d-models/star-trek-danube-class-efc194b3d5f14a2e8718fe5bb7baee7a> [Accessed 17/02/20]
 
 Sound Effects Used:
 - deleted_user_5405837 (2017), "explosion_012.mp3", Freesound.org <https://freesound.org/people/deleted_user_5405837/sounds/399303/> [Accessed 22/02/20]
