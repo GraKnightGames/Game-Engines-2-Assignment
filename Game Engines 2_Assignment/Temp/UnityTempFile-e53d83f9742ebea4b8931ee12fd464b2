@@ -345,5 +345,6 @@ Assets\Cinemachine\Timeline\CinemachineTrack.cs
 Assets\Scripts\Boid.cs
 Assets\Scripts\OffsetPursue.cs
 Assets\Scripts\ShipPathfinding.cs
+Assets\Scripts\SteeringBehaviour.cs
 "Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs"
 "Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs"

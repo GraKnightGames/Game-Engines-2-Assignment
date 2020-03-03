@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShipPathfinding : MonoBehaviour
+public class ShipPathfinding : SteeringBehaviour
 {
     public Vector3 velocity = Vector3.zero;
     public Vector3 acceleration = Vector3.zero;
@@ -51,8 +51,7 @@ public class ShipPathfinding : MonoBehaviour
 
         return desired - velocity;
     }
-
-    public Vector3 CalculateForce() //Calculates the force needed to move the boid
+    public override Vector3 Calculate() //Calculates the force needed to move the boid
     {
         Vector3 toTarget = target - transform.position;
         dist = toTarget.magnitude;
@@ -81,7 +80,7 @@ public class ShipPathfinding : MonoBehaviour
         {
             target = targetTransforms[i].position;
         }
-        force = CalculateForce();
+        force = Calculate();
         acceleration = force / mass;
         velocity += acceleration * Time.deltaTime;
         transform.position += velocity * Time.deltaTime;

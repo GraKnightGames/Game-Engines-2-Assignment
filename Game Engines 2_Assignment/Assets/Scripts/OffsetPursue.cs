@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OffsetPursue : Boid
+public class OffsetPursue : SteeringBehaviour
 {
     public Boid leader;
 Vector3 targetPos;
     Vector3 worldTarg;
     Vector3 offset;
+    private float maxSpeed = 5;
+
     void Start()
     {
         offset = transform.position - leader.transform.position;
@@ -17,7 +19,7 @@ Vector3 targetPos;
     {
         worldTarg = leader.transform.TransformPoint(offset);
         float dist = Vector3.Distance(worldTarg, transform.position);
-        float time = dist / Boid.maxSpeed;
+        float time = dist / maxSpeed;
         targetPos = worldTarg + (leader.vel * time);
         return leader.ArrivingForce(targetPos);
     }
