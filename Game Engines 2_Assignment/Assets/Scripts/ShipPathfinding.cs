@@ -6,7 +6,6 @@ public class ShipPathfinding : SteeringBehaviour
 {
     public Vector3 velocity = Vector3.zero;
     public Vector3 acceleration = Vector3.zero;
-    public Vector3 force = Vector3.zero;
 
     public float mass = 1.0f;
 

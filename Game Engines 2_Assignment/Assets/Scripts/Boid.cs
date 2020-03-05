@@ -27,13 +27,14 @@ public class Boid : MonoBehaviour
         foreach (SteeringBehaviour b in strBehaviours)
         {
             this.strBehaviours.Add(b); //Adding all instances of the SteeringBehaviour script to the list
+            print(b.name);
         }
     }
 
     public Vector3 SeekingForce(Vector3 target)
     {
         Vector3 desired = target - transform.position; //Distance to the target
-        desired.Normalize(); //Direction to the target
+        desired = desired / desired.magnitude; //Normalizing to get the direction to the target
         desired = desired * maxSpeed; //Calculates the force in the direction of the normalized desired vector at the speed specified by the maxSpeed
         return desired - vel;
     }
@@ -56,12 +57,14 @@ public class Boid : MonoBehaviour
         return desired - vel;
     }
 
-    public virtual Vector3 CalculateForce()
+    Vector3 CalculateForce()
     {
         force = Vector3.zero;
 
         foreach (SteeringBehaviour b in strBehaviours)
         {
+            if (b.isActiveAndEnabled)
+            {
                 force += b.Calculate() * b.boidWeight;
 
                 if (force.magnitude >= maxForce)
@@ -70,11 +73,13 @@ public class Boid : MonoBehaviour
                     break;
                 }
             }
+        }
         return force;
     }
 
     void Update()
     {
+        force = CalculateForce();
         vel += accel * Time.deltaTime;
         float speed = vel.magnitude;
         Vector3 newAccel = force / mass;
