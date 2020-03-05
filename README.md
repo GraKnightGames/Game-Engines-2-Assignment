@@ -61,3 +61,6 @@ Sound Effects Used:
 
 Scene Recreated:
 - Star Trek: Deep Space Nine (1997), Paramount Domestic Television, 3 November
+
+Some code adapted from:
+- skooter500 (2020), "GE2-2019-2020, Github repository, <https://github.com/skooter500/GE2-2019-2020> [Accessed 03/03/20]
