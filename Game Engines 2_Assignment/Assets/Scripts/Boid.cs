@@ -11,7 +11,7 @@ public class Boid : MonoBehaviour
 
     public float mass = 1.0f;
 
-    public static float maxSpeed = 5;
+    public float maxSpeed = 5;
     public float maxForce = 10;
     public int i;
     public float dist;
@@ -39,11 +39,12 @@ public class Boid : MonoBehaviour
         return desired - vel;
     }
 
-    public Vector3 ArrivingForce(Vector3 target, float slowingDist = 20.0f)
+    public Vector3 ArrivingForce(Vector3 target, float slowingDist)
     {
         Vector3 toTarget = target - transform.position;
 
         float dist = toTarget.magnitude;
+
         if (dist < 0.1f)
         {
             return Vector3.zero;
@@ -66,7 +67,6 @@ public class Boid : MonoBehaviour
             if (b.isActiveAndEnabled)
             {
                 force += b.Calculate() * b.boidWeight;
-
                 if (force.magnitude >= maxForce)
                 {
                     force = Vector3.ClampMagnitude(force, maxForce);
@@ -80,11 +80,10 @@ public class Boid : MonoBehaviour
     void Update()
     {
         force = CalculateForce();
-        vel += accel * Time.deltaTime;
         float speed = vel.magnitude;
         Vector3 newAccel = force / mass;
         accel = Vector3.Lerp(accel, newAccel, Time.deltaTime);
-
+        vel = vel + accel * Time.deltaTime;
         vel = Vector3.ClampMagnitude(vel, maxSpeed);
 
         if (speed > 0)
@@ -92,8 +91,8 @@ public class Boid : MonoBehaviour
             Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (accel * banking), Time.deltaTime * 3.0f);
             transform.LookAt(transform.position + vel, tempUp);
 
-            transform.position = (transform.position + vel) * Time.deltaTime;
-            vel *= 1.0f - (damping * Time.deltaTime);
+            transform.position += vel * Time.deltaTime;
+            vel *= (1.0f - (damping * Time.deltaTime));
         }
     }
 }

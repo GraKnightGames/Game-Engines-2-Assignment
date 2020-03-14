@@ -40,16 +40,20 @@ public class ShipPathfinding : SteeringBehaviour
             Gizmos.DrawCube(targetTransforms[i].position, new Vector3(1, 1, 1)); //Drawing cubes at each waypoint to visualise them for easy editing
             Gizmos.DrawLine(targetTransforms[i].position, targetTransforms[0].position);
         }
+        Gizmos.color = Color.red;
+        for (int i = 0; i < targetTransforms.Length; i++)
+        {
+            Gizmos.DrawWireSphere(targetTransforms[i].position, changingDistance);
+        }
     }
 
+        Vector3 Seek(Vector3 target) //Gets the distance to the target and the speed the boid needs to be travelling at to reach the target
+        {
+            Vector3 toTarget = target - transform.position;
+            Vector3 desired = toTarget.normalized * maxSpeed;
 
-    Vector3 Seek(Vector3 target) //Gets the distance to the target and the speed the boid needs to be travelling at to reach the target
-    {
-        Vector3 toTarget = target - transform.position;
-        Vector3 desired = toTarget.normalized * maxSpeed;
-
-        return desired - velocity;
-    }
+            return desired - velocity;
+        }
     public override Vector3 Calculate() //Calculates the force needed to move the boid
     {
         Vector3 toTarget = target - transform.position;
