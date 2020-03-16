@@ -11,7 +11,7 @@ public class Boid : MonoBehaviour
 
     public float mass = 1.0f;
 
-    public float maxSpeed = 5;
+    public float maxSpeed = 1.5f;
     public float maxForce = 10;
     public int i;
     public float dist;

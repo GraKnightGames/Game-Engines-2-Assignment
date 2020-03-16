@@ -9,7 +9,7 @@ public class ShipPathfinding : SteeringBehaviour
 
     public float mass = 1.0f;
 
-    public float maxSpeed = 5;
+    //public float maxSpeed = 5;
     public float maxForce = 10;
     public int i = 0;
 
@@ -50,7 +50,7 @@ public class ShipPathfinding : SteeringBehaviour
         Vector3 Seek(Vector3 target) //Gets the distance to the target and the speed the boid needs to be travelling at to reach the target
         {
             Vector3 toTarget = target - transform.position;
-            Vector3 desired = toTarget.normalized * maxSpeed;
+            Vector3 desired = toTarget.normalized * boid.maxSpeed;
 
             return desired - velocity;
         }
