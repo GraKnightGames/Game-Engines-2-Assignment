@@ -13,32 +13,104 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeInFrames: 1
-  timeAreaShownRange: {x: 3.432763, y: 66.011154}
+  timeAreaShownRange: {x: 78.733696, y: 108.61266}
   showAudioWaveform: 1
-  trackScale: 21.834988
+  trackScale: 18.970005
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
-  windowTime: 34.85
-  verticalScroll: 7361.181
+  windowTime: 104.61666666666666
+  verticalScroll: 2261.5059
   showMarkerHeader: 0
   m_Keys:
   - {fileID: -8703595240592666678, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: 7447876018671526299, guid: cbd614d041b112840970e46f451c26a1, type: 2}
-  - {fileID: -8245425930121298036, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: 8831735910762295401, guid: cbd614d041b112840970e46f451c26a1, type: 2}
-  - {fileID: -3058130703961097982, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -4039795557589207600, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -4314838425145348136, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -6823121526347750856, guid: cbd614d041b112840970e46f451c26a1, type: 2}
-  - {fileID: 267637294244142907, guid: cbd614d041b112840970e46f451c26a1, type: 2}
-  - {fileID: -4686658434134586713, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: 7757677599875132479, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -5336614498825245270, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -7847840967673499021, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -3605056315431573819, guid: cbd614d041b112840970e46f451c26a1, type: 2}
-  - {fileID: 7143307296231493822, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: 1589057359322391190, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: -2555117667044351530, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: 6288385681794703933, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: -2635047218311121528, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: 3499374267626586544, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: -938715523213979632, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: -7606648213175172897, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: 6124632804195570913, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   m_Vals:
+  - collapsed: 0
+    showMarkers: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+    lastInlineCurveDataID: -1
+    inlineCurvesState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    inlineCurvesShownAreaInsideMargins:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 1
+      height: 1
+    m_MarkerTimeStampsKeys: 
+    m_MarkerTimeStampsValues: 
+  - collapsed: 0
+    showMarkers: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+    lastInlineCurveDataID: -1
+    inlineCurvesState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    inlineCurvesShownAreaInsideMargins:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 1
+      height: 1
+    m_MarkerTimeStampsKeys: 
+    m_MarkerTimeStampsValues: 
   - collapsed: 0
     showMarkers: 1
     showInlineCurves: 0
