@@ -14,8 +14,6 @@ public class OffsetPursue : SteeringBehaviour
     {
         Vector3 offSetDist = transform.position - leader.transform.position; //Calculates the distance between the pursuing boid and the leader boid
         offset = Quaternion.Inverse(leader.transform.rotation) * offSetDist;
-        offset *= Time.deltaTime;
-        leaderTrans = leader.transform;
     }
     public override Vector3 Calculate()
     {
@@ -24,8 +22,15 @@ public class OffsetPursue : SteeringBehaviour
         float time = dist / boid.maxSpeed;
         Vector3 posMult = leader.vel * time;
         targetPos = worldTarg + posMult;
-        force = boid.ArrivingForce(targetPos, 15.0f);
+        force = boid.ArrivingForce(targetPos, 1f);
         return force;
+    }
+    private void Update()
+    {
+        if (leader != null)
+        {
+            leaderTrans = leader.transform;
+        }
     }
     private void FixedUpdate()
     {
