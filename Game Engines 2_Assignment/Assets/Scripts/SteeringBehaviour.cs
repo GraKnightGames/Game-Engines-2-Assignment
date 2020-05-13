@@ -7,7 +7,6 @@ public abstract class SteeringBehaviour : MonoBehaviour
     public float boidWeight = 1.0f;
     public Vector3 force;
 
-    [HideInInspector]
     public Boid boid;
 
     public void Awake()

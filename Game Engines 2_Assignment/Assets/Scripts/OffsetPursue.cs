@@ -8,11 +8,12 @@ public class OffsetPursue : SteeringBehaviour
     Vector3 targetPos;
     Vector3 worldTarg;
     public Vector3 offset;
+    public Vector3 offSetDist;
     public Transform leaderTrans;
 
     void Start()
     {
-        Vector3 offSetDist = transform.position - leader.transform.position; //Calculates the distance between the pursuing boid and the leader boid
+        offSetDist = transform.position - leader.transform.position; //Calculates the distance between the pursuing boid and the leader boid
         offset = Quaternion.Inverse(leader.transform.rotation) * offSetDist;
     }
     public override Vector3 Calculate()

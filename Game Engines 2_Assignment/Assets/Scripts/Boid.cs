@@ -13,12 +13,11 @@ public class Boid : MonoBehaviour
 
     public float maxSpeed = 1.5f;
     public float maxForce = 10;
-    public int i;
+
     public float dist;
     public float damping = 0.1f;
 
     private float banking = 0.2f;
-
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +26,6 @@ public class Boid : MonoBehaviour
         foreach (SteeringBehaviour b in strBehaviours)
         {
             this.strBehaviours.Add(b); //Adding all instances of the SteeringBehaviour script to the list
-            print(b.name);
         }
     }
 
@@ -41,9 +39,7 @@ public class Boid : MonoBehaviour
 
     public Vector3 ArrivingForce(Vector3 target, float slowingDist)
     {
-        Vector3 toTarget = target - transform.position;
-
-        float dist = toTarget.magnitude;
+        Vector3 toTarg = target - transform.position;
 
         if (dist < 0.1f)
         {
@@ -53,7 +49,7 @@ public class Boid : MonoBehaviour
         float ramped = maxSpeed * rampMult;
 
         float clamped = Mathf.Min(ramped, maxSpeed);
-        Vector3 desired = clamped * (toTarget / dist);
+        Vector3 desired = clamped * (toTarg / (toTarg.magnitude));
 
         return desired - vel;
     }
@@ -61,7 +57,6 @@ public class Boid : MonoBehaviour
     Vector3 CalculateForce()
     {
         force = Vector3.zero;
-
         foreach (SteeringBehaviour b in strBehaviours)
         {
             if (b.isActiveAndEnabled)
@@ -77,7 +72,7 @@ public class Boid : MonoBehaviour
         return force;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         force = CalculateForce();
         float speed = vel.magnitude;

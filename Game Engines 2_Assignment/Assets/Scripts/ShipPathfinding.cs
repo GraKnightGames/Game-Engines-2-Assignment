@@ -76,8 +76,8 @@ public class ShipPathfinding : SteeringBehaviour
             arrived = false;
         }
     }
-    // Update is called once per frame
-    void Update()
+
+    void FixedUpdate()
     {
         if (target != null)
         {
