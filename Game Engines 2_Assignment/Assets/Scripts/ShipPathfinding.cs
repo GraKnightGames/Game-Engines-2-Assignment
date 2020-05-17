@@ -92,11 +92,11 @@ public class ShipPathfinding : SteeringBehaviour
         velocity += acceleration * Time.deltaTime;
         transform.position += velocity * Time.deltaTime;
         speed = velocity.magnitude;
-        /* if (speed > 0)
+         if (speed > 0)
         {
             Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * banking), Time.deltaTime * 3.0f);
             transform.LookAt(transform.position + velocity, tempUp); //Applies banking
-        } */
+        }
         Switching();
         if (arrived) //moves on to the next waypoint and sets the arrived bool to false
         {
