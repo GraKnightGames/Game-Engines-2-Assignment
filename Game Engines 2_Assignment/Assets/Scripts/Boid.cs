@@ -37,11 +37,11 @@ public class Boid : MonoBehaviour
         return desired - vel;
     }
 
-    public Vector3 ArrivingForce(Vector3 target, float slowingDist)
+    public Vector3 ArrivingForce(Vector3 target, float slowingDist = 15.0f)
     {
         Vector3 toTarg = target - transform.position;
-
-        if (dist < 0.1f)
+ 
+        if (toTarg.magnitude < 0.1f)
         {
             return Vector3.zero;
         }
@@ -49,7 +49,8 @@ public class Boid : MonoBehaviour
         float ramped = maxSpeed * rampMult;
 
         float clamped = Mathf.Min(ramped, maxSpeed);
-        Vector3 desired = clamped * (toTarg / (toTarg.magnitude));
+        Vector3 clampMult = toTarg / dist;
+        Vector3 desired = clamped * (clampMult);
 
         return desired - vel;
     }
@@ -78,7 +79,7 @@ public class Boid : MonoBehaviour
         float speed = vel.magnitude;
         Vector3 newAccel = force / mass;
         accel = Vector3.Lerp(accel, newAccel, Time.deltaTime);
-        vel = vel + accel * Time.deltaTime;
+        vel += accel * Time.deltaTime;
         vel = Vector3.ClampMagnitude(vel, maxSpeed);
 
         if (speed > 0)
