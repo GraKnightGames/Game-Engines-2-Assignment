@@ -31,7 +31,7 @@ public class Pathfinding_Random : SteeringBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        boidWeight = 0;
+        boidWeight = 1;
         i = Random.Range(0, 17);
         wayPointsHolder = GameObject.Find("WayPoints_Ships2").GetComponent<Transform>();
         triggerObj = GameObject.Find("Ships2_PathfindingTrigger");

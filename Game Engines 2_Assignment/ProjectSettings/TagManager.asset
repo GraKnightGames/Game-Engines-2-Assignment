@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LaserTarget
   - WayPoint
+  - Trigger
   layers:
   - Default
   - TransparentFX

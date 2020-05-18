@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeInFrames: 1
-  timeAreaShownRange: {x: 52.15809, y: 147.43262}
+  timeAreaShownRange: {x: 35.622643, y: 148.62253}
   showAudioWaveform: 1
   trackScale: 20.055006
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
-  windowTime: 78.36666666666666
-  verticalScroll: 1592.8824
+  windowTime: 68.95
+  verticalScroll: 13564.658
   showMarkerHeader: 1
   m_Keys:
   - {fileID: -8703595240592666678, guid: cbd614d041b112840970e46f451c26a1, type: 2}
@@ -56,7 +56,6 @@ MonoBehaviour:
   - {fileID: -2640454520098372668, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: 4766868774582906095, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: 151868596120642450, guid: cbd614d041b112840970e46f451c26a1, type: 2}
-  - {fileID: 6914755546841321272, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -2824488906806504491, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: 6930952875542168975, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -7425825710622111261, guid: cbd614d041b112840970e46f451c26a1, type: 2}
@@ -75,6 +74,9 @@ MonoBehaviour:
   - {fileID: -3555614648757735190, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -1379720542933370096, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   - {fileID: -3936213276535892712, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: -6569918628769555349, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: -251009715243331206, guid: cbd614d041b112840970e46f451c26a1, type: 2}
+  - {fileID: -7555761740388228456, guid: cbd614d041b112840970e46f451c26a1, type: 2}
   m_Vals:
   - collapsed: 0
     showMarkers: 1
@@ -1196,6 +1198,76 @@ MonoBehaviour:
       height: 1
     m_MarkerTimeStampsKeys: b8baffff3eb6ffff603d00003cdeffffd2dcffff763d0000743d0000703d0000723d00004085ffff
     m_MarkerTimeStampsValues: a192b1f8e7f8d708fdff37e6e7f8d7085e81f439eaf8d70852f3bdf6fff8d70804186dfcfff8d708dddc05f6fff8d70863fb7b968ff9d70806c679958ff9d7083a0a07978ff9d7088d3211a68ff9d708
+  - collapsed: 0
+    showMarkers: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+    lastInlineCurveDataID: -1
+    inlineCurvesState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    inlineCurvesShownAreaInsideMargins:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 1
+      height: 1
+    m_MarkerTimeStampsKeys: 
+    m_MarkerTimeStampsValues: 
+  - collapsed: 0
+    showMarkers: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+    lastInlineCurveDataID: -1
+    inlineCurvesState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    inlineCurvesShownAreaInsideMargins:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 1
+      height: 1
+    m_MarkerTimeStampsKeys: 
+    m_MarkerTimeStampsValues: 
   - collapsed: 0
     showMarkers: 1
     showInlineCurves: 0
