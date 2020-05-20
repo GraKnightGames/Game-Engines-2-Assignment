@@ -13,10 +13,10 @@ public class StateMachine : MonoBehaviour
 {
     public State currentState;
     public State prevState;
-    public int updatesPerSecond = 5;
+    public float updatesPerSecond = 0.2f; // Ensures that the coroutine does not update every second, which would cause a crash
     private void OnEnable()
     {
-        StartCoroutine(Execute());
+        StartCoroutine(Execute()); //Calls execute on the current state
     }
 
     // Update is called once per frame
@@ -25,25 +25,25 @@ public class StateMachine : MonoBehaviour
     }
     public void ChangeState(State newState)
     {
-        prevState = currentState;
+        prevState = currentState; 
         if (currentState != null)
         {
-            currentState.Exit();
+            currentState.Exit(); //Calls exit on the current state in order to execute any code in this function before changing
         }
-        currentState = newState;
+        currentState = newState; //Changes state
         currentState.owner = this;
-        currentState.Enter();
+        currentState.Enter(); //Calls Enter on the new state, fully changing the state
     }
     IEnumerator Execute()
     {
-        yield return new WaitForSeconds(Random.Range(0, 0.5f));
+        yield return new WaitForSeconds(updatesPerSecond);
         while (true)
         {
             if (currentState != null)
             {
                 currentState.Execute();
             }
-            yield return new WaitForSeconds(1.0f / (float)updatesPerSecond);
+            yield return new WaitForSeconds(updatesPerSecond);
         }
     }
 }

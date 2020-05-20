@@ -10,11 +10,13 @@ public class RandomPathFindingShipsController : MonoBehaviour
     {
         public GameObject trigger;
         public Pathfinding_Random pathfindingBehaviour;
+        private Vector3 rot;
         public override void Enter()
         {
             trigger = GameObject.FindGameObjectWithTag("Trigger");
             pathfindingBehaviour = owner.gameObject.GetComponent<Pathfinding_Random>();
             pathfindingBehaviour.enabled = false;
+            owner.GetComponent<SteeringBehaviour>().force = new Vector3(0, 0, 0);
         }
         public override void Execute()
         {
@@ -45,12 +47,12 @@ public class RandomPathFindingShipsController : MonoBehaviour
         {
             if (trigger.activeSelf == false)
             {
+                pathfindingBehaviour.enabled = false;
                 owner.ChangeState(new StillState());
             }
         }
         public override void Exit()
         {
-            pathfindingBehaviour.enabled = false;
         }
     }
 
