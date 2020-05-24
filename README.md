@@ -1,7 +1,15 @@
 # Game-Engines-2-Assignment
-The repository for the first Game Engines assignment of semester two
+A recreation of a battle scene from the Star Trek: Deep Space Nine episode 'The Sacrifice of Angels'
+
+Instructions: Open the project and press play.
+
+How it Works: Most behaviours are triggered using Unity's Timeline feature, but there is a finite state machine used for the wandering ships.
+
+What I am most proud of: Implementing a variation of the Offset Pursue steering behaviour on some ships to make them follow random waypoints.
 
 Original Scene: https://www.youtube.com/watch?v=89WcIwjlQxA
+
+
 
 STORYBOARD:
 
